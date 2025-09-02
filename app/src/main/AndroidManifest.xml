@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JadwalPelajaranXD">
         <activity
+            android:name=".AddEditScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeeklyScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TodayScheduleActivity"
+            android:exported="false" />
+        <activity
             android:name=".login"
             android:exported="false" />
         <activity
