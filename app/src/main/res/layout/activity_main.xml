@@ -7,38 +7,60 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="24dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/image">
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Jadwal Pelajaran"
-        android:textSize="24sp"
+        android:textSize="28sp"
+        android:textColor="@android:color/white"
         android:textStyle="bold"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="sans-serif-medium"
         android:gravity="center" />
 
-    <Button
-        android:id="@+id/btnToday"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="📅 Lihat Jadwal Hari Ini"
-        android:layout_marginBottom="16dp" />
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:weightSum="2">
 
-    <Button
-        android:id="@+id/btnAll"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="📖 Lihat Semua Jadwal"
-        android:layout_marginBottom="16dp" />
+        <Button
+            android:id="@+id/btnToday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📅 Lihat Jadwal Hari Ini"
+            android:background="@drawable/btn_transparent_background"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnAll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📖 Lihat Semua Jadwal"
+            android:background="@drawable/btn_transparent_background"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
 
     <Button
         android:id="@+id/btnAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="➕ Tambah / Edit Jadwal"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/black"
-        android:text="➕ Tambah / Edit Jadwal" />
+        android:background="@drawable/btn_transparent_background"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false" />
 
 </LinearLayout>
